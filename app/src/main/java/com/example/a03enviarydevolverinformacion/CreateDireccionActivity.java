@@ -38,6 +38,7 @@ public class CreateDireccionActivity extends AppCompatActivity {
                 Bundle bundle = new Bundle();
                 bundle.putSerializable("DIR", dir);
                 intent.putExtras(bundle);
+                //setresult sirve oara decir que retornamos informacion
                 setResult(RESULT_OK, intent);
                 //de que ventana viene es decir que ventana se cierra para que vuelva el main
                 //con esto vuelve al main:
@@ -48,9 +49,9 @@ public class CreateDireccionActivity extends AppCompatActivity {
 
     private void inicializaVistas() {
 
-        txtCalle.findViewById(R.id.txtCalleCreateDir);
-        txtNumero.findViewById(R.id.txtNumeroCreateDir);
-        txtCiudad.findViewById(R.id.txtCiudadCreateDir);
-        btnCrear.findViewById(R.id.btnCrearDireccionCreateDir);
+        txtCalle = findViewById(R.id.txtCalleCreateDir);
+        txtNumero = findViewById(R.id.txtNumeroCreateDir);
+        txtCiudad = findViewById(R.id.txtCiudadCreateDir);
+        btnCrear = findViewById(R.id.btnCrearDireccionCreateDir);
     }
 }
